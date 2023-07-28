@@ -1,0 +1,158 @@
+.company-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.company-icon {
+    color: rgba(149, 147, 147, 0.336);
+    text-align: center;
+}
+
+.residence-container {
+    margin-top: 5%;
+}
+
+.residence-container span {
+    color:orange;
+    font-size: var(--p);
+}
+
+.residence-container h2 {
+    font-size: var(--h2);
+    padding-bottom: 50px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 1rem;
+}
+
+.card h4 {
+    font-size: var(--h4);
+}
+
+.card p {
+    font-size: var(--p);
+}
+
+.card span {
+    font-size: 1.5rem;
+}
+
+
+
+/* ------ scrren 1550px */
+@media (max-width: 1550px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin: auto;
+    }
+
+    .card-img {
+        width: 550px;
+    }
+
+    .card span {
+        display: block;
+        padding: 30px 0;
+    }
+}
+
+
+
+
+/* ------ scrren 690px */
+@media (max-width: 690px) {
+    .company-icon .icon {
+        width: 50px;
+    }
+
+    .company-icon h2 {
+        font-size: 1.3rem;
+    }
+
+    .residence-container h2 {
+       font-size: 1.7rem;
+    }
+
+    .card-img {
+        width: 450px;
+    }
+
+    .card h4 {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        width: 450px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+/* ------ scrren 520px */
+@media (max-width: 520px) {
+    .company-container {
+        width: 520px;
+    }
+    .company-icon .icon {
+        width: 40px;
+    }
+
+    .company-icon h2 {
+        font-size: 1rem;
+    }
+
+    .residence-container span {
+       font-size: 1rem;
+    }
+
+    .residence-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .card-container {
+        width: 500px;
+        gap: 1rem;
+    }
+
+    .card {
+        text-align: center;
+    }
+
+    .card-img {
+        width: 360px;
+    }
+
+    .card p {
+        width: 400px;
+    }
+}
+
+
+
+
+/* ------ scrren 420px */
+@media (max-width: 420px) {
+    .card-img {
+        width:380px;
+    }
+    
+    .company-container {
+        width:600px;
+    }
+}
+    
